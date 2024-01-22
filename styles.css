@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Set background color to black */
+}
+
+.d {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.about-me,
+.skills,
+.hire-me {
+    margin-top: 20px;
+}
+
+.about-me h1,
+.skills h1,
+.hire-me h1 {
+    color: #b10c0c;
+}
+
+.about-me p,
+.skills p,
+.hire-me p {
+    color: #e0c7c7;
+}
+
+.images {
+    position: relative;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s, z-index 0.3s; /* Added z-index transition */
+}
+
+.images img:first-child {
+    position: absolute;
+    z-index: 0; /* Set a lower z-index for the smaller image */
+    left: 0;
+    top: 0;
+}
+
+.images img:last-child {
+    z-index: 1; /* Set a higher z-index for the larger image */
+}
+
+.images img:hover {
+    bottom:40px;
+    left: 45%;
+    transform: translateX(-10%); /* Move images to the left on hover */
+    z-index: 2; /* Bring the hovered image to the front */
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.about-me a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.hire-me a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.about-me a:hover,
+.hire-me a:hover {
+    background-color: #dec2c2;
+}
